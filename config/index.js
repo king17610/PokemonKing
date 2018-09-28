@@ -42,8 +42,8 @@ module.exports = {
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'PokemonKing/dist/static',
-    assetsPublicPath: '/',
+    assetsSubDirectory: 'static',
+    assetsPublicPath: '/PokemonKing/dist/',
 
     /**
      * Source Maps
