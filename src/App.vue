@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view/>
   </div>
 </template>
@@ -11,13 +10,20 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+body{
+  margin: 0;
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  font-family: 'moon','Noto Sans TC', sans-serif;
   color: #2c3e50;
-  margin-top: 60px;
+}
+.container{
+  width: 1024px;
+}
+@font-face {
+    font-family: 'moon'; /*a name to be used later*/
+    src: url('../static/font/Moon2.0-Regular.otf'); /*URL to font*/
 }
 </style>
