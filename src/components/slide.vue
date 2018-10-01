@@ -18,7 +18,7 @@ export default {
   data () {
     return {
       fluxOptions:{
-        height:'300px',
+        width:'300px',
         autoplay:true,
         delay:1000,
       },
