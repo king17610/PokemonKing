@@ -23,12 +23,13 @@ export default {
 
 <style scoped lang="scss">
 .navbar{
-  padding: 8px 0;
+  padding: 20px 0 15px;
   position: relative;
   height: 50px;
+  width: 100%;
 }
 .logo{
-    display: inline-block;
+    float: left;
     height: 100%;
     img{
       height: 100%;
