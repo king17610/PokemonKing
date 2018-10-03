@@ -18,9 +18,12 @@ body{
 #app {
   font-family: 'moon','Noto Sans TC', sans-serif;
   color: #2c3e50;
+  background: url('/static/img/background.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .container{
-  width: 1024px;
+  width: 1280px;
 }
 @font-face {
     font-family: 'moon'; /*a name to be used later*/

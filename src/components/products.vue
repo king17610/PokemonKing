@@ -1,27 +1,27 @@
 <template>
-  <div>
+  <div class="products">
     <loading v-if="isLoading" ></loading>
     <p class="categories_titel">商品分類</p>
     <div class="categories">
       <div class="items">
         <router-link class="item" to="/">
-          <img src="../../static/img/1.png" alt="">
+          <img src="../../static/img/Torch.png" alt="">
           <p class="item_name">精選商品</p>
         </router-link>
         <router-link class="item" to="/">
-          <img src="../../static/img/1.png" alt="">
+          <img src="../../static/img/Campfire.png" alt="">
           <p class="item_name">精靈球</p>
         </router-link>
         <router-link class="item" to="/">
-          <img src="../../static/img/1.png" alt="">
+          <img src="../../static/img/Fire_Pit.png" alt="">
           <p class="item_name">藥品補給</p>
         </router-link>
         <router-link class="item" to="/">
-          <img src="../../static/img/1.png" alt="">
+          <img src="../../static/img/Backpack.png" alt="">
           <p class="item_name">野外求生道具</p>
         </router-link>
         <router-link class="item" to="/">
-          <img src="../../static/img/1.png" alt="">
+          <img src="../../static/img/Miner_Hat.png" alt="">
           <p class="item_name">精選組合包</p>
         </router-link>
       </div>
@@ -92,7 +92,6 @@ export default {
         }
       },
       products: [],
-      pagination:{},
       isLoading:false
     }
   },
@@ -104,10 +103,9 @@ export default {
     getPorducts(){
       let self = this;
       self.isLoading = true;
-      $.get('https://king17610.github.io/pokemonAPI/products/p.json',function(res){
+      $.get('https://king17610.github.io/pokemonAPI/products/PrdoctsData.json',function(res){
         console.log(res);
           self.products = res.products;
-          self.pagination = res.pagination;
           self.isLoading = false;
       })
     }
@@ -121,6 +119,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.products{
+  padding: 30px 20px 30px;
+  background: white;
+}
 a{
   text-decoration: none;
   color: #333;
@@ -159,6 +161,7 @@ a{
   }
 }
 .categories_titel{
+  margin: 0;
   text-align: left;
   position: relative;
   font-size: 20px;
@@ -169,7 +172,7 @@ a{
 
 
 .swiper-container {
-  max-width: 1080px;
+  max-width: 1280px;
   width: 100%;
   height: 340px;
   padding-bottom: 20px;

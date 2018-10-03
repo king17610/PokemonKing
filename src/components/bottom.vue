@@ -4,7 +4,7 @@
       <img src="../../static/img/shop.png" alt="">
     </div>
     <div class="container">
-      <img src="../../static/img/pokemon_store.png" alt="">
+      <img src="../../static/img/DontStrave.png" alt="">
       <div class="info">
         <p>實體店面：真新鎮大木路一段16號</p>
         <p>營業時間：00:00-24:00</p>

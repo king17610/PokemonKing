@@ -15,7 +15,7 @@ export default {
   name: 'navbar',
   data () {
     return {
-      logo:'../static/img/pokemon_store.png'
+      logo:'../static/img/DontStrave.png'
     }
   }
 }
@@ -23,10 +23,12 @@ export default {
 
 <style scoped lang="scss">
 .navbar{
-  padding: 20px 0 15px;
+  background: #727272;
+  opacity: 0.8;
+  color: white;
+  padding: 10px 20px;
   position: relative;
   height: 50px;
-  width: 100%;
 }
 .logo{
     float: left;
@@ -52,7 +54,7 @@ export default {
       float: left;
     }
     a{
-      color: #473f3f;
+      color: white;
       text-decoration: none;
       padding: 3px 5px; 
       display: inline-block;

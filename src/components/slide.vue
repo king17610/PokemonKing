@@ -34,7 +34,7 @@ export default {
         loop: true,
         speed: 1000,  
         autoplay: {
-          delay: 5000,
+          delay: 3000,
         },
         slidesPerView: "auto",
         centeredSlides: true,
@@ -60,9 +60,10 @@ export default {
 <style scoped lang="scss">
 
 .swiper-container {
-  max-width: 1080px;
+  max-width: 1280px;
   width: 100%;
   height: 380px;
+  background: #fff;
 }
 .swiper-slide {
   width: 70%;
@@ -75,26 +76,26 @@ export default {
     background-position: center center;
     background-size: cover;
     &.slide-1 {
-      background-image: url("../../static/img/slide1.jpg");
+      background-image: url("../../static/img/slide1.png");
     }
     &.slide-2 {
-      background-image: url("../../static/img/slide2.jpg");
+      background-image: url("../../static/img/slide2.png");
     }
     &.slide-3 {
       background-image: url("../../static/img/slide3.jpg");
     }
     &.slide-4 {
-      background-image: url("../../static/img/slide4.jpg");
+      background-image: url("../../static/img/slide4.png");
     }
     &.slide-5 {
-      background-image: url("../../static/img/slide5.jpg");
+      background-image: url("../../static/img/slide5.png");
     }
   }
 }
 .swiper-slide-prev,
 .swiper-slide-next {
   background: #fff;
-  opacity: 0.3;
+  opacity: 0.7;
   transition: all .3s;
 }
 

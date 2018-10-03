@@ -10,7 +10,9 @@
       <li><router-link to="/">購物商城</router-link></li>
     </ul>
     <slide></slide>
-    <h1>{{ msg }}</h1>
+    <div class="welcome">
+      <h1 >{{ msg }}</h1>
+    </div>
     <div id="news">
       <div class="news"><p>2018.09.21<span class="news_class emergency">緊急</span>因真新鎮受超夢大軍侵襲，暫時停止營業，不便之處，敬請見諒。</p></div>
       <div class="news"><p>2018.09.21<span class="news_class notice">活動</span>因真新鎮受超夢大軍侵襲，暫時停止營業，不便之處，敬請見諒。</p></div>
@@ -30,7 +32,7 @@ export default {
   name: 'Home',
   data () {
     return {
-      msg: '"冒險者！歡迎來到神奇寶貝購物中心"',
+      msg:'"'+'冒險者！歡迎來到 Dont'+"'"+'s Strave 購物中心'+'"',
       isLoading:false
     }
   },
@@ -55,15 +57,21 @@ export default {
   #PokemonKing{
     margin: 0 auto;
     text-align: center;
+    background: #fbeac8;
+    opacity: 0.98;
     h1{
-      color: #2b447d;
-      margin: 20px auto;
-      width: 18em;
+      margin: 0 auto;
+      color: #765646d4;
+      width: 21em;
       border-right: 0.05em solid;
       overflow: hidden;
       font-weight: 900;
       white-space: nowrap;
-      animation: typing 3s steps(18),insert 1s steps(1) infinite;
+      animation: typing 3s steps(29),insert 1s steps(1) infinite;
+    }
+    .welcome{
+      padding: 20px 0;
+      background:#fbeac8;
     }
   }
    @keyframes typing {
@@ -77,9 +85,10 @@ export default {
     }
   }
   #main_menu{
+    background: white;
     list-style: none;
-    padding: 0;
-    margin: 0 0 12px;
+    padding: 6px 100px;
+    margin: 0;
     display: flex;
      justify-content:space-between;
     li{
@@ -97,13 +106,13 @@ export default {
     }
     
   }
-    
+  
   #news{
+    background: white;
     text-align: left;
     letter-spacing: 1px;
     color: #666;
-    margin-bottom: 30px;
-    padding: 10px;
+    padding: 10px 20px;
     box-shadow: 1px 3px 5px #eee;
     .news_class{
       border-radius: 5px;
