@@ -11,14 +11,21 @@
     </ul>
     <slide></slide>
     <h1>{{ msg }}</h1>
-
+    <div id="news">
+      <div class="news"><p>2018.09.21<span class="news_class emergency">緊急</span>因真新鎮受超夢大軍侵襲，暫時停止營業，不便之處，敬請見諒。</p></div>
+      <div class="news"><p>2018.09.21<span class="news_class notice">活動</span>因真新鎮受超夢大軍侵襲，暫時停止營業，不便之處，敬請見諒。</p></div>
+    </div>
+    <products></products>
+    <bottom></bottom>
   </div>
 </template>
 
 <script>
 import navbar from '@/components/navbar'
 import slide from '@/components/slide'
-import loading from "@/components/loading";
+import loading from "@/components/loading"
+import products from "@/components/products"
+import bottom from "@/components/bottom";
 export default {
   name: 'Home',
   data () {
@@ -30,7 +37,9 @@ export default {
   components:{
     navbar,
     slide,
-    loading
+    loading,
+    products,
+    bottom
   },
   created(){
     const vm = this;
@@ -87,6 +96,34 @@ export default {
       color: #2b447d;
     }
     
+  }
+    
+  #news{
+    text-align: left;
+    letter-spacing: 1px;
+    color: #666;
+    margin-bottom: 30px;
+    padding: 10px;
+    box-shadow: 1px 3px 5px #eee;
+    .news_class{
+      border-radius: 5px;
+      padding: 0px 4px;
+      font-style: 14px;
+      margin: 0px 10px;
+      color: #fff;
+    }
+    .emergency{
+      background: red;
+    }
+    .notice{
+      background: blue;
+    }
+    p{
+      margin: 0;
+    }
+    .news{
+      margin: 4px 0;
+    }
   }
 
 </style>

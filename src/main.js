@@ -4,8 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+
+import currencyFilter from './filters/currency'
+import textlength from './filters/textlength'
+
 Vue.config.productionTip = false
 
+Vue.filter('currency',currencyFilter)
+Vue.filter('textlength',textlength)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
