@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" style="background-image:url('../static/img/background.png')">
     <router-view/>
   </div>
 </template>
@@ -18,7 +18,6 @@ body{
 #app {
   font-family: 'moon','Noto Sans TC', sans-serif;
   color: #2c3e50;
-  background: url('../static/img/background.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
