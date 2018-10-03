@@ -18,7 +18,7 @@ body{
 #app {
   font-family: 'moon','Noto Sans TC', sans-serif;
   color: #2c3e50;
-  background: url('/static/img/background.png');
+  background: url('../static/img/background.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
