@@ -3,7 +3,7 @@
     <loading v-if="isLoading" ></loading>
     <navbar></navbar>
     <ul id="main_menu">
-      <li><router-link to="/">角色選擇</router-link></li>
+      <li><router-link to="/categories">角色選擇</router-link></li>
       <li><router-link to="/">生物總覽</router-link></li>
       <li><router-link to="/">道具購買</router-link></li>
       <li><router-link to="/">食物宅配</router-link></li>
