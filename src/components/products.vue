@@ -6,23 +6,23 @@
       <div class="items">
         <router-link class="item" to="/">
           <img src="../../static/img/Torch.png" alt="">
-          <p class="item_name">精選商品</p>
+          <p class="item_name">角色選擇</p>
         </router-link>
         <router-link class="item" to="/">
           <img src="../../static/img/Campfire.png" alt="">
-          <p class="item_name">精靈球</p>
+          <p class="item_name">生物總覽</p>
         </router-link>
         <router-link class="item" to="/">
           <img src="../../static/img/Fire_Pit.png" alt="">
-          <p class="item_name">藥品補給</p>
+          <p class="item_name">道具購買</p>
         </router-link>
         <router-link class="item" to="/">
           <img src="../../static/img/Backpack.png" alt="">
-          <p class="item_name">野外求生道具</p>
+          <p class="item_name">食物宅配</p>
         </router-link>
         <router-link class="item" to="/">
           <img src="../../static/img/Miner_Hat.png" alt="">
-          <p class="item_name">精選組合包</p>
+          <p class="item_name">購物商城</p>
         </router-link>
       </div>
     </div>
