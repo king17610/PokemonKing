@@ -30,7 +30,7 @@
     <swiper :options="swiperOption">
       <swiper-slide v-for="product in products" :key="product.id">
         <div class="categories">{{ product.category }}</div>
-        <img :src="product.imageUrl" alt="">
+          <img :src="product.imageUrl" alt="">
         <div class="title">{{ product.title }}</div>
         <p class="intro">{{ product.description | textlength }}</p>
         <div class="price">
@@ -103,7 +103,7 @@ export default {
     getPorducts(){
       let self = this;
       self.isLoading = true;
-      $.get('https://king17610.github.io/pokemonAPI/products/PrdoctsData.json',function(res){
+      $.get('https://king17610.github.io/DontStraveAPI/products/PrdoctsData.json',function(res){
         console.log(res);
           self.products = res.products;
           self.isLoading = false;
@@ -200,6 +200,8 @@ a{
     border: 2px solid #fff;
   }
   img{
+    width: 100%;
+    height: 100%;
     max-width: 140px;
     max-height: 140px;
     padding: 10px;
@@ -215,6 +217,7 @@ a{
     font-size: 14px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ccc;
+    width: 100%;
   }
   .price{
     font-weight: normal;

@@ -10,7 +10,7 @@
         <p>營業時間：00:00-24:00</p>
       </div>
       <div>
-        <p>作者：kkk <a href="/">Github</a></p>
+        <p>作者：king 練習作品 <a href="/">Github</a></p>
         <p>練習作品｜<a href="/">圖片來源：https://www.pokemon.com/us/</a></p> 
       </div>
     </div>
