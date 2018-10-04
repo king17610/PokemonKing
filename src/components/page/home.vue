@@ -3,7 +3,7 @@
     <loading v-if="isLoading" ></loading>
     <navbar></navbar>
     <ul id="main_menu">
-      <li><a href="itms-apps://itunes.apple.com/tw/app/triplefeet/id1228009839?l=zh&ls=1&mt=8">最新商品</a></li>
+      <li><a @click="window.location='itms-apps://itunes.apple.com/tw/app/triplefeet/id1228009839?l=zh&ls=1&mt=8'">最新商品</a></li>
       <li><router-link to="/">精靈球</router-link></li>
       <li><router-link to="/">藥品補給</router-link></li>
       <li><router-link to="/">生活道具</router-link></li>
